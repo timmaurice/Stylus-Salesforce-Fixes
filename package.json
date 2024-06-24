@@ -1,0 +1,26 @@
+{
+  "name": "stylus-salesforce-fixes",
+  "version": "1.0.0",
+  "description": "A stylus css overwrite",
+  "main": "style.css",
+  "scripts": {
+    "watch": "stylus -w style.styl -o style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timmaurice/Stylus-Salesforce-Fixes.git"
+  },
+  "keywords": [
+    "stylus",
+    "salesforce"
+  ],
+  "author": "Tim Maurice Bayer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/timmaurice/Stylus-Salesforce-Fixes/issues"
+  },
+  "homepage": "https://github.com/timmaurice/Stylus-Salesforce-Fixes#readme",
+  "dependencies": {
+    "stylus": "^0.63.0"
+  }
+}
