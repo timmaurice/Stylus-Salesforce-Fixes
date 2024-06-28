@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Stylus Salesforce Overwrite
 @namespace      github.com/timmaurice/Stylus-Salesforce-Fixes
-@version        1.0.0
+@version        1.0.1
 @description    A stylus css salesforce overwrite that fix things
 @author         Tim Maurice Bayer
 ==/UserStyle== */
@@ -13,6 +13,7 @@
   .slds-nav-vertical__item.slds-is-active:before {
     background: rgba(244,245,174,0.2);
   }
+  .slds-tree [role=treeitem][aria-selected=true]>.slds-tree__item,
   .onesetupSetupNavTree ul[data-name=all] .tree-node[aria-selected=true] .slds-tree__item,
   .slds-nav-vertical__item.slds-is-active .slds-nav-vertical__action {
     background: #f4f5ae;
@@ -29,6 +30,7 @@
     padding: 0.375rem 0;
     width: 100%;
   }
+  .dataCell,
   .bPageBlock .detailList tr.detailRow td,
   .data2Col,
   [slot='outputField'],
@@ -37,6 +39,9 @@
     white-space: break-spaces;
     font-size: 10px;
     line-height: 90%;
+  }
+  tbody:has([id^='MonitorDeploymentsPage']) .dataCell {
+    white-space: nowrap;
   }
   .x-grid3-cell-inner {
     text-overflow: unset;

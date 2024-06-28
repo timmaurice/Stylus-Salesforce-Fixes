@@ -4,6 +4,8 @@
   "description": "A stylus css salesforce overwrite that fix things",
   "main": "style.css",
   "scripts": {
+    "format": "stylus-supremacy format ./style.styl -r",
+    "format:build": "npm run format && stylus style.styl -o style.css",
     "watch": "stylus -w style.styl -o style.css"
   },
   "repository": {
@@ -21,6 +23,7 @@
   },
   "homepage": "https://github.com/timmaurice/Stylus-Salesforce-Fixes#readme",
   "dependencies": {
-    "stylus": "^0.63.0"
+    "stylus": "^0.63.0",
+    "stylus-supremacy": "^2.17.5"
   }
 }
