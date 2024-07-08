@@ -1,0 +1,7 @@
+{
+    "blocks": false,
+    "brackets": "never",
+    "semicolons": "never",
+    "sortOrder": "alphabetical",
+    "stylusSupremacy.selectorSeparator": ",\n"
+}

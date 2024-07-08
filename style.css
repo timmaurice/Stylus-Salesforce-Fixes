@@ -36,16 +36,17 @@
   [slot='outputField'],
   lightning-formatted-text[data-output-element-id='output-field'] {
     font-family: monospace;
-    white-space: break-spaces;
     font-size: 10px;
     line-height: 90%;
+    white-space: break-spaces;
   }
-  tbody:has([id^='MonitorDeploymentsPage']) .dataCell {
+  tbody:has([id^='MonitorDeploymentsPage']) .dataCell,
+  tbody:has([id^='listSandbox']) .dataCell {
     white-space: nowrap;
   }
   .x-grid3-cell-inner {
     text-overflow: unset;
-    white-space: normal;
     user-select: all;
+    white-space: normal;
   }
 }
