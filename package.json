@@ -1,6 +1,6 @@
 {
   "name": "stylus-salesforce-fixes",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A stylus css salesforce overwrite that fix things",
   "main": "style.css",
   "scripts": {

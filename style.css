@@ -1,11 +1,11 @@
 /* ==UserStyle==
 @name           Stylus Salesforce Overwrite
 @namespace      github.com/timmaurice/Stylus-Salesforce-Fixes
-@version        1.0.1
+@version        1.0.2
 @description    A stylus css salesforce overwrite that fix things
 @author         Tim Maurice Bayer
 ==/UserStyle== */
-@-moz-document domain("lightning.force.com"), domain("sandbox.my.salesforce.com"), domain("my.salesforce.com") {
+@-moz-document domain("lightning.force.com"), domain("sandbox.my.salesforce.com"), domain("sandbox.my.salesforce-setup.com"), domain("my.salesforce.com") {
   .slds-nav-vertical__action:hover {
     box-shadow: inset 0.125rem 0 0 #babc16;
   }
