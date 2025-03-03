@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Stylus Salesforce Overwrite
 @namespace      github.com/timmaurice/Stylus-Salesforce-Fixes
-@version        1.0.2
+@version        1.0.3
 @description    A stylus css salesforce overwrite that fix things
 @author         Tim Maurice Bayer
 ==/UserStyle== */
@@ -40,6 +40,8 @@
     line-height: 90%;
     white-space: break-spaces;
   }
+  tbody:has([id^='ListInboundChangeSetPage']) .dataCell,
+  tbody:has([id^='ListOutboundChangeSetPage']) .dataCell,
   tbody:has([id^='MonitorDeploymentsPage']) .dataCell,
   tbody:has([id^='listSandbox']) .dataCell {
     white-space: nowrap;

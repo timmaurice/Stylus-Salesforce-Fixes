@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Stylus Salesforce Overwrite
 @namespace      github.com/timmaurice/Stylus-Salesforce-Fixes
-@version        1.0.2
+@version        1.0.3
 @description    A stylus css salesforce overwrite that fix things
 @author         Tim Maurice Bayer
 ==/UserStyle== */
@@ -48,7 +48,9 @@ dia-green-light = #f4f5ae
 		line-height: 90%
 		white-space: break-spaces
 
-	// Revert for Deployment Status and Sandbox List Page
+	// Revert for In- and Outbound Change Set and Deployment Status and Sandbox List Page
+	tbody:has([id^='ListInboundChangeSetPage']),
+	tbody:has([id^='ListOutboundChangeSetPage']),
 	tbody:has([id^='MonitorDeploymentsPage']),
 	tbody:has([id^='listSandbox'])
 		.dataCell

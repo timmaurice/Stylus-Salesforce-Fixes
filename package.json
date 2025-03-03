@@ -1,11 +1,11 @@
 {
   "name": "stylus-salesforce-fixes",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A stylus css salesforce overwrite that fix things",
   "main": "style.css",
   "scripts": {
     "format": "stylus-supremacy format ./style.styl -r --options ./.stylintrc",
-    "format:build": "npm run format && stylus style.styl -o style.css",
+    "build": "npm run format && stylus style.styl -o style.css",
     "watch": "stylus -w style.styl -o style.css"
   },
   "repository": {
@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/timmaurice/Stylus-Salesforce-Fixes#readme",
   "dependencies": {
-    "stylus": "^0.63.0",
-    "stylus-supremacy": "^2.17.5"
+    "stylus": "^0.64.0",
+    "stylus-supremacy": "^4.0.0"
   }
 }
