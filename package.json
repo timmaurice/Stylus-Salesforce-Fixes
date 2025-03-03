@@ -4,9 +4,14 @@
   "description": "A stylus css salesforce overwrite that fix things",
   "main": "style.css",
   "scripts": {
-    "format": "stylus-supremacy format ./style.styl -r --options ./.stylintrc",
     "build": "npm run format && stylus style.styl -o style.user.css",
+    "format": "stylus-supremacy format ./style.styl -r --options ./.stylintrc",
+    "generate-toc": "markdown-toc -i README.md",
+    "prepare": "husky",
     "watch": "stylus -w style.styl -o style.user.css"
+  },
+  "lint-staged": {
+    "*.md": "npm run generate-toc"
   },
   "repository": {
     "type": "git",
@@ -25,5 +30,10 @@
   "dependencies": {
     "stylus": "^0.64.0",
     "stylus-supremacy": "^4.0.0"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
+    "markdown-toc": "^1.2.0"
   }
 }

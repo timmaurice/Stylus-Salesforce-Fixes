@@ -1,0 +1,3 @@
+npm run generate-toc
+npm run build
+git update-index --again
