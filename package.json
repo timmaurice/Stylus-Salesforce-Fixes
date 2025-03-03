@@ -5,8 +5,8 @@
   "main": "style.css",
   "scripts": {
     "format": "stylus-supremacy format ./style.styl -r --options ./.stylintrc",
-    "build": "npm run format && stylus style.styl -o style.css",
-    "watch": "stylus -w style.styl -o style.css"
+    "build": "npm run format && stylus style.styl -o style.user.css",
+    "watch": "stylus -w style.styl -o style.user.css"
   },
   "repository": {
     "type": "git",
