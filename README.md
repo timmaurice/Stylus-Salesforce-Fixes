@@ -12,6 +12,7 @@ A **Stylus** CSS extension that improves the Salesforce UI by fixing various usa
 - [Customization](#customization)
 - [Development & Build](#development--build)
 - [Changelog](#changelog)
+  * [1.0.5 - 2025-05-19](#105---2025-05-19)
   * [1.0.4 - 2025-03-03](#104---2025-03-03)
   * [1.0.3 - 2025-03-03](#103---2025-03-03)
   * [1.0.2 - 2025-01-23](#102---2025-01-23)
@@ -46,6 +47,10 @@ A **Stylus** CSS extension that improves the Salesforce UI by fixing various usa
 ---
 
 ## Changelog
+
+### 1.0.5 - 2025-05-19
+- Fix styling on deployment settings page
+- Upgrade lint-staged
 
 ### 1.0.4 - 2025-03-03
 - Added a static badge for Node.js + stylus version.

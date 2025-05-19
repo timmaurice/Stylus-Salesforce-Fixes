@@ -1,6 +1,6 @@
 {
   "name": "stylus-salesforce-fixes",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A stylus css salesforce overwrite that fix things",
   "main": "style.css",
   "scripts": {
@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "husky": "^9.1.7",
-    "lint-staged": "^15.4.3",
+    "lint-staged": "^16.0.0",
     "markdown-toc": "^1.2.0"
   }
 }
