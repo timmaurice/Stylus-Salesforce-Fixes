@@ -1,3 +1,4 @@
-npm run generate-toc
+npm run toc
+npm run prebuild
 npm run build
 git update-index --again

@@ -1,17 +1,20 @@
 /* ==UserStyle==
 @name           Stylus Salesforce Overwrite
 @namespace      github.com/timmaurice/Stylus-Salesforce-Fixes
-@version        1.0.5
-@description    A stylus css salesforce overwrite that fix things
+@version        1.0.6
+@description    A userstyle to improve usability and apply a custom theme to Salesforce Lightning and Classic.
 @author         Tim Maurice Bayer (https://timbayer.de)
 @homepageURL 	https://userstyles.world/style/16934/salesforce-overwrite
 @supportURL 	https://github.com/timmaurice/Stylus-Salesforce-Fixes/issues
-@updateURL 		https://raw.githubusercontent.com/timmaurice/Stylus-Salesforce-Fixes/refs/heads/main/style.user.css
+@updateURL 		https://raw.githubusercontent.com/timmaurice/Stylus-Salesforce-Fixes/main/style.user.css
 @license 	  	MIT
 @preprocessor   stylus
 @var color    	color-primary       	"Primary color" #BABC16
-@var color    	color-primary-light 	"Primary color light (lighten primary by 0.65 looks good)" #f4f5ae
-@var checkbox 	apply-monospace-styles	"Show monospace font" 1
+@var color    	color-primary-light 	"Primary color light" lighten(color-primary, 65%)
+@var checkbox 	apply-monospace-styles	"Use Monospace Font for Data" 1
+@var text     	monospace-font-family "Monospace Font Family" "monospace"
+@var text     	monospace-font-size   "Monospace Font Size" "10px"
+@var text     	monospace-line-height "Monospace Line Height" "1.2"
 ==/UserStyle== */
 @-moz-document domain("lightning.force.com"), domain("sandbox.my.salesforce.com"), domain("sandbox.my.salesforce-setup.com"), domain("my.salesforce.com") {
   .slds-nav-vertical__action:hover {
@@ -57,9 +60,9 @@
   .data2Col,
   [slot='outputField'],
   lightning-formatted-text[data-output-element-id='output-field'] {
-    font-family: monospace;
-    font-size: 10px;
-    line-height: 90%;
+    font-family: monospace-font-family;
+    font-size: monospace-font-size;
+    line-height: monospace-line-height;
     white-space: break-spaces;
   }
 	}

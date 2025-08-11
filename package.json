@@ -1,17 +1,21 @@
 {
   "name": "stylus-salesforce-fixes",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A stylus css salesforce overwrite that fix things",
   "main": "style.css",
   "scripts": {
     "build": "npm run format && stylus style.styl -o style.user.css",
     "format": "stylus-supremacy format ./style.styl -r --options ./.stylintrc",
-    "generate-toc": "markdown-toc -i README.md",
+    "prebuild": "node scripts/version.js",
     "prepare": "husky",
+    "toc": "markdown-toc -i README.md && markdown-toc -i CHANGELOG.md",
     "watch": "stylus -w style.styl -o style.user.css"
   },
   "lint-staged": {
-    "*.md": "npm run generate-toc"
+    "*.md": "npm run toc"
+  },
+  "engines": {
+    "node": ">=20"
   },
   "repository": {
     "type": "git",
@@ -27,13 +31,11 @@
     "url": "https://github.com/timmaurice/Stylus-Salesforce-Fixes/issues"
   },
   "homepage": "https://github.com/timmaurice/Stylus-Salesforce-Fixes#readme",
-  "dependencies": {
-    "stylus": "^0.64.0",
-    "stylus-supremacy": "^4.0.0"
-  },
   "devDependencies": {
     "husky": "^9.1.7",
-    "lint-staged": "^16.0.0",
-    "markdown-toc": "^1.2.0"
+    "lint-staged": "^16.1.5",
+    "markdown-toc": "^1.2.0",
+    "stylus": "^0.64.0",
+    "stylus-supremacy": "^4.0.0"
   }
 }
